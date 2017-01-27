@@ -1,0 +1,124 @@
+
+<html>
+<head>
+<meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"19560a1a2e","agent":"","transactionName":"M1AANkBQX0UEW0JbXwoaJBdcUkVfClYZX1EWQwcOU0FBGARIRkEeFEcNFl1FSEYAFkBbVRNGWBBXX1VTF2dGQF8QWhYbQlQ=","applicationID":"3438665","errorBeacon":"bam.nr-data.net","applicationTime":113}</script>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="format-detection" content="telephone=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="twitter:card" content="player">
+<meta name="twitter:site" content="@marvelapp">
+
+<meta name="twitter:title" content="iNspire 3">
+<meta name="twitter:description" content="Marvel Prototype for iNspire 3">
+
+<meta name="twitter:player" content="https://marvelapp.com/4ihhbab?emb=1">
+<meta name="twitter:player:width" content="402">
+<meta name="twitter:player:height" content="823">
+<meta name="twitter:player:stream" content="https://marvelapp.com/4ihhbab?emb=1">
+<meta name="twitter:player:stream:content_type" content="image/jpeg">
+<meta property="og:title" content="iNspire 3">
+<meta property="og:image" content="https://marvelapp-live.storage.googleapis.com/serve/2017/1/5ce6b5c6f12d44d6a526d37da376d114.png">
+<meta property="og:site_name" content="Marvel Prototyping">
+<meta property="og:description" content="Marvel Prototype for iNspire 3">
+<link type="text/css" href="static/css/prototype.056200f02394034d8cea.css" rel="stylesheet"/>
+
+<script type="text/javascript">
+    window.Promise || document.write('<sc'+'ript src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.2.1/es6-promise.min.js"></scr'+'ipt>');
+    window.fetch || document.write('<sc'+'ript src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.11.0/fetch.min.js"></scr'+'ipt>');
+</script>
+
+<script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38711157-1', 'auto');
+    ga('send', 'pageview', "prototype-view");
+</script>
+
+<script type="text/javascript">
+  (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;
+  s.src='https://widget.intercom.io/widget/{app_id}';
+  var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+</script>
+<script type="text/javascript">
+  (function() {
+    var trackerReady = fetch('/api/v1/integration/snippet/?project_id=1686260')
+      .then(function(response) {
+        if (!response.ok) {
+          return Promise.reject(response);
+        }
+        return response.json();
+      })
+      .then(function(response) {
+        var gaSnippet = response.snippets.filter(function(snippet) {
+          return snippet.provider === 'ga';
+        })[0];
+        if (!gaSnippet) {
+          return Promise.reject(response);
+        }
+        ga('create', gaSnippet.tracker_id, 'auto', 'marvelUserGATracker');
+      })
+      .catch(function(error){
+        // catching it so it does not create noise in the console
+      });
+      window.MARVELAPP = {
+        offline: true,
+        randomNumber: 5,
+        projectId: "4ihhbab",
+        projectConfig: {"last_active":"2017-01-26 20:38:59.515399","is_archived":false,"isprivate":0,"likes":0,"owner_fk":592785,"images":{"1":{"preview_thumbnail":"https://res.cloudinary.com/marvel-content/image/fetch/s--yMdN9TpV--/t_width_320/https://marvelapp-live.storage.googleapis.com/serve/2017/1/5ce6b5c6f12d44d6a526d37da376d114.png","hotspots":[],"is_desktop":true,"seq":1,"source_platform_human":"Desktop","top_pixel_colour":"236, 246, 252, 1.0","height":1632,"source_platform":"4","es_canvas_id":null,"is_app_icon":false,"id":24268364,"size":615702,"uuid":"d78514b7-97e4-4f65-b02a-6d2983e0a379","bright_pixel_colour":null,"width":640,"comment_count":0,"version":29,"hotspots_delta":"8a970c56fdf3097b15287c97ace43af0","thumbnail":"https://res.cloudinary.com/marvel-content/image/fetch/s--gktYDrJB--/q_70,t_thumbnail_fill_320_568/https://marvelapp-live.storage.googleapis.com/serve/2017/1/5ce6b5c6f12d44d6a526d37da376d114.png","revision":null,"status":5,"preview_thumbnail_640":null,"description":null,"bottom_pixel_colour":"236, 246, 252, 1.0","content_type":"image/png","name":"iNspire-splash-scr.png","layer_sync_uri":"","url":"https://marvelapp-live.storage.googleapis.com/serve/2017/1/5ce6b5c6f12d44d6a526d37da376d114.png","layer_parent":null,"directory":null,"status_pixel_colour":"236, 246, 252, 1.0"}},"team_name":null,"project_image":"https://res.cloudinary.com/marvel-content/image/fetch/s--eD3nuZfs--/t_project_thumbnail/https://marvelapp-live.storage.googleapis.com/serve/2017/1/5ce6b5c6f12d44d6a526d37da376d114.png","id":1686260,"published_time":"2017-01-25 04:05:49","team_fk":null,"pusher_channel":"private-project-production_1686260","uuid":"df6dd802-2b5d-4477-bb27-624727b13136","sync_started":null,"total_size":12711157,"bright_pixel_colour":null,"team_icon":null,"state":1,"sequence_delta":"40b70c83783c560f44270e3397aaf28d","vanity_url":"https://marvelapp.com/4ihhbab","sync_ended":null,"version":6,"hotspots_delta":"c8933cd451b31a6a3aa8348ce1b6fd9d","owner_username":"Priti Patil","explore_url":"https://marvelapp.com/explore/1686260/inspire-3","embed_url":"https://marvelapp.com/4ihhbab","description":"None","views":0,"es_canvas_id":null,"num_images":53,"human_url":null,"pusher_public_channel":"prototype-production_1686260","is_syncing":0,"project_base_image":"https://marvelapp-live.storage.googleapis.com/serve/2017/1/5ce6b5c6f12d44d6a526d37da376d114.png","password":null,"properties":[{"id":34252124,"name":"ui-prj-show-hints","value":"0","description":"Show hints on prototype","uuid":"5710a20e-8fb3-4395-b6f3-eabde36f53d1","read_only":false},{"id":34252125,"name":"ui-prj-status-bar","value":"0","description":"Set status bar background colour","uuid":"d92b5875-2a15-4cfa-aabc-fda7311affd5","read_only":false},{"id":34252109,"name":"prj-lookback-ever-enabled","value":"0","description":"Lookback ever been enabled for this project","uuid":"5ffeae41-e928-488e-b789-319d216c906a","read_only":true},{"id":34252107,"name":"prj-comments-ever-enabled","value":"1","description":"Comments have ever been enabled for this project","uuid":"402d2acb-b2dd-48f8-8769-656091bbe12d","read_only":true},{"id":34252108,"name":"prj-lookback-enabled","value":"0","description":"Enable Lookback for this project","uuid":"3c97d336-0f4a-45ca-93fb-4b7cf36054e8","read_only":false},{"id":34252122,"name":"ui-prj-responsive","value":"0","description":"Set images as responsive","uuid":"43f3450a-87ed-4994-9059-cf1dfe4a6474","read_only":false},{"id":34252126,"name":"ui-prj-thumbnail-width","value":"180","description":"Set thumbnail width for project view","uuid":"3daefa82-655a-488d-b42e-367459de62b9","read_only":false},{"id":34252123,"name":"ui-prj-retina-scale","value":"0","description":"Scale images to half their original width for retina images","uuid":"bd7483ae-5f3c-46fc-9aec-c1ef4bd144e0","read_only":false},{"id":34252112,"name":"ui-prj-center-image","value":"0","description":"Center image instead of aligning left","uuid":"3c68c4a4-7db8-4bc3-bfdd-80087ef3f786","read_only":false},{"id":34252111,"name":"ui-prj-background-hex","value":"FFFFFF","description":"Set background colour for prototype preview","uuid":"24671812-c503-4c5f-8a07-011ed172728c","read_only":false},{"id":34252117,"name":"ui-prj-frame","value":"iphone5-frame","description":"Set phone frame","uuid":"4c8c13fe-2c96-491e-8f60-ac7820a61657","read_only":false},{"id":34252120,"name":"ui-prj-prototype-background-hex","value":"FFFFFF","description":"Set background for prototype background","uuid":"ca110f77-5de8-49e0-a686-2b79a65403c1","read_only":false},{"id":34252115,"name":"ui-prj-disable-swipe","value":"1","description":"Disable prototype swipes","uuid":"3eaea810-67e5-4f75-abce-7571c74774e5","read_only":false},{"id":34252113,"name":"ui-prj-center-overflow","value":"0","description":"Center images and hide overflow on non-responsive images","uuid":"85659ee6-c94b-47d3-b53b-152547f5b11e","read_only":false},{"id":34252121,"name":"ui-prj-remove-status","value":"0","description":"Removes status bar on project","uuid":"2e75923c-4a8a-4340-8ebf-81bc9f0af9c0","read_only":false},{"id":34252114,"name":"ui-prj-disable-frame","value":"0","description":"New site features for user","uuid":"393653ce-4b03-47e8-ad7b-b92344a392a5","read_only":false},{"id":34252106,"name":"prj-comments-enabled","value":"1","description":"Enable comments for this project","uuid":"02489ccf-9269-45f0-848e-85da6e88705e","read_only":false},{"id":34252118,"name":"ui-prj-frame-colour","value":"black","description":"Set phone colour","uuid":"afa6ca8d-0920-425b-ae4d-19db81360db1","read_only":false},{"id":34252119,"name":"ui-prj-orientation","value":"portrait","description":"Set phone orientation","uuid":"32e43a9f-c3fb-4b82-b404-8140c018baa4","read_only":false},{"id":34252116,"name":"ui-prj-explore-background-hex","value":"#000000","description":"Set background colour for explore view","uuid":"d408330b-d4bc-43ac-a393-fca411ec7cac","read_only":false}],"app_icon":{"preview_thumbnail":"https://res.cloudinary.com/marvel-content/image/fetch/s--ryYLFg3H--/t_app_icon_120/https://marvelapp-live.storage.googleapis.com/serve/2017/1/3f5307b12fc04efb950a998ef50722a0.png","hotspots":[],"is_desktop":true,"seq":null,"source_platform_human":"Desktop","top_pixel_colour":"255, 255, 255, 0.0","height":192,"source_platform":"4","es_canvas_id":null,"is_app_icon":true,"id":24318352,"size":null,"uuid":"233e8604-2ffd-430e-b7f6-2cbdfd25b7d5","bright_pixel_colour":null,"width":192,"comment_count":0,"version":3,"hotspots_delta":"","thumbnail":"https://res.cloudinary.com/marvel-content/image/fetch/s--ryYLFg3H--/t_app_icon_120/https://marvelapp-live.storage.googleapis.com/serve/2017/1/3f5307b12fc04efb950a998ef50722a0.png","revision":null,"status":5,"preview_thumbnail_640":null,"description":null,"bottom_pixel_colour":"255, 255, 255, 0.0","content_type":"image/png","name":"","layer_sync_uri":"","url":"https://res.cloudinary.com/marvel-content/image/fetch/s--8jPWh7Mv--/t_app_icon_180/https://marvelapp-live.storage.googleapis.com/serve/2017/1/3f5307b12fc04efb950a998ef50722a0.png","layer_parent":null,"directory":null,"status_pixel_colour":null},"canvas_images":[],"is_deleted":false,"name":"iNspire 3","date_modified":"2017-01-27 07:08:20","cursor":"","team_uri":null,"published":false,"date_created":"2017-01-14 02:03:37","is_pro":true,"resource_uri":"/project/1686260/"},
+        settings: {"CANVAS_EASEL_HOST": "https://easel.marvelapp.com", "DISALLOWED_FILENAME_CHARACTERS": "\\\"<>=", "PUSHER": {"PROTOTYPE_CHANNEL_PREFIX": "prototype-production_", "PROJECT_CHANNEL_PREFIX": "private-project-production_", "EXPLORE_CHANNEL_PREFIX": "explore-production_", "USER_CHANNEL_PREFIX": "private-user-production_"}, "BASE_URL": "https://marvelapp.com", "STRIPE_PUBLISHABLE": "pk_live_1afBzKMbfYd1vhu8lsneB1Zb", "ENVIRONMENT": "live", "APP_SENTRY_DSN": "https://873a8ca087a0492d8d22b808d6931306@sentry.io/97119", "BOX_COM_CLIENT_ID": "wo18m8uju79g09r64gf5r7xm59xf6zif", "GOOGLE_CLIENT_ID": "308573482263-ddask8oq90fg9n9o5t6ub8190v5nqvta.apps.googleusercontent.com", "CANVAS_TOKEN_PROVIDER_HOST": "https://marvelapp.com", "PROTOTYPE_SENTRY_DSN": "https://883389dfaa2349e891ef7b4f0a6cec51@sentry.io/96884", "MARVEL_CORS_PROXY": "https://marvelapp.com/proxy/", "SITE_SENTRY_DSN": "https://3fad520e195b4e168ceb79d16cbce216@app.getsentry.com/38273", "INTERCOM_APP_ID": "9afe6b55dbac3807f4bc7ebcdf1fc0470c2454f1", "REVISION": "3ca7e31a67"},
+        iOSApp: 0,
+        role: "Client",
+        currentUser: {},
+        trackAsync: function(location, screenName) {
+          return trackerReady.then(function() {
+            ga('marvelUserGATracker.send', 'pageview', {
+              page: location.pathname + screenName,
+              title: screenName
+            });
+          });
+        }
+      };
+  }());
+</script>
+
+<script type="text/javascript" src="data.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-91010603-1', 'auto');
+	  ga('send', 'pageview', "iNspire-v3-2-view");
+
+	</script>
+	<!-- Tweak for Google Analytics to catch SPA navigation -->
+	<script>
+	var currentPage = window.location.href;
+	window.onload = function() {
+		setInterval(function() {
+		    if (currentPage !== window.location.href) {
+		        currentPage = window.location.href;
+		        var newPage = window.location.pathname + window.location.hash
+				ga('set', 'page', newPage);
+				ga('send', 'pageview');
+				console.log(newPage);
+		    }
+		}, 100);
+	};
+	</script>
+	<!-- End of tweak for Google Analytics to catch SPA navigation -->
+<!-- https://developers.google.com/analytics/devguides/collection/analyticsjs/single-page-applications -->
+</head>
+<body>
+<div id="prototype"></div>
+<script type="text/javascript" src="static/common-bundle.19f59f9aeb21fa5af290.js"></script>
+<script type="text/javascript" src="static/prototype-bundle.056200f02394034d8cea.js"></script>
+</body>
+</html>
