@@ -1,0 +1,19 @@
+<!-- Tweak for Google Analytics to catch SPA navigation -->
+<!-- to be added just after GA code -->
+<!-- Code thanks to: bakoushin/tweak.html -->
+<script>
+var currentPage = window.location.href;
+window.onload = function() {
+	setInterval(function() {
+	    if (currentPage !== window.location.href) {
+	        currentPage = window.location.href;
+	        var newPage = window.location.pathname + window.location.hash
+			ga('set', 'page', newPage);
+			ga('send', 'pageview');
+			console.log(newPage);        
+	    }
+	}, 100);
+};
+</script>
+<!-- End of tweak for Google Analytics to catch SPA navigation -->
+<!-- https://developers.google.com/analytics/devguides/collection/analyticsjs/single-page-applications -->
